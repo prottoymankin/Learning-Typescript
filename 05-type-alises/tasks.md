@@ -17,3 +17,7 @@ Model CardPayment and UpiPayment as separate object types. Combine them into a P
 ### Task 05
 
 Create a discriminated union with loading, success with a list of users, and error with an error message. Write renderState() using switch.
+
+### Task 06
+
+Create one variable of type (string | number)[] and another of type string[] | number[]. Add valid and invalid examples and explain why the two types behave differently.

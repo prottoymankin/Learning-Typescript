@@ -66,3 +66,18 @@ const renderState = (state: ApiState) => {
     case "error": return `Error: ${state.message}`;
   }
 };
+
+// Task 06
+//* MixedValues: Each element can be either a string or a number.
+type MixedValues = (string | number)[];
+
+const mixedValues: MixedValues = [10, "ten", 20, "twenty"];
+
+// HomogeneousValues: The entire array must contain only strings or only numbers.
+type HomogeneousValues = string[] | number[];
+
+const homogeneousValues_1: HomogeneousValues = [10, 20, 30, 40];
+const homogeneousValues_2: HomogeneousValues = ["ten", "twenty", "thirty", "forty"];
+
+ //! Error
+// const homogeneousValues_3: HomogeneousValues = [10, "twenty"];
