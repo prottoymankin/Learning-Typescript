@@ -49,3 +49,20 @@ const processPayment = (payment: Payment) => {
       break;
   }
 };
+
+// Task 05
+type User = {
+  id: number;
+  name: string;
+  email: string;
+};
+
+type ApiState = { status: "loading" } | { status: "success"; data: User[] } | { status: "error"; message: string };
+
+const renderState = (state: ApiState) => {
+  switch (state.status) {
+    case "loading": return "Loading...";
+    case "success": return state.data;
+    case "error": return `Error: ${state.message}`;
+  }
+};
