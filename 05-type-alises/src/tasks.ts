@@ -8,3 +8,14 @@ const printUserId = (userId: UserId) => {
     console.log(userId.toFixed(0));
   }
 };
+
+// Task 02
+type Theme = "light" | "dark" | "system";
+
+const setTheme = (theme: Theme) => {
+  console.log(`Set theme: ${theme}`);
+};
+
+setTheme("dark");
+setTheme("light");
+setTheme("system");
