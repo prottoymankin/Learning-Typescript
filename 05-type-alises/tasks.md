@@ -21,3 +21,7 @@ Create a discriminated union with loading, success with a list of users, and err
 ### Task 06
 
 Create one variable of type (string | number)[] and another of type string[] | number[]. Add valid and invalid examples and explain why the two types behave differently.
+
+### Bonus Task
+
+Design a discriminated union for a shopping cart with states such as "empty", "ready", and "checkout". Each state should contain only the data that makes sense for that state.

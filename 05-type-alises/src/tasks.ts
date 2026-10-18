@@ -81,3 +81,33 @@ const homogeneousValues_2: HomogeneousValues = ["ten", "twenty", "thirty", "fort
 
  //! Error
 // const homogeneousValues_3: HomogeneousValues = [10, "twenty"];
+
+// Bonus Task
+type CartItem = {
+  id: number;
+  name: string;
+  price: number;
+  quantity: number;
+};
+
+type CartState = 
+  { status: "empty" }
+  | { status: "ready"; items: CartItem[]; total: number }
+  | { status: "checkout"; items: CartItem[]; total: number; shippingAddress: string };
+
+const cart1: CartState = {
+  status: "empty",
+};
+
+const cart2: CartState = {
+  status: "ready",
+  items: [{ id: 1, name: "Keyboard", price: 1000, quantity: 1 }],
+  total: 1000,
+};
+
+const cart3: CartState = {
+  status: "checkout",
+  items: [{ id: 1, name: "Keyboard", price: 1000, quantity: 1 }],
+  total: 1000,
+  shippingAddress: "Dhaka, Bangladesh",
+};
