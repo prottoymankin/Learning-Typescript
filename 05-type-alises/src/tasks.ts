@@ -19,3 +19,6 @@ const setTheme = (theme: Theme) => {
 setTheme("dark");
 setTheme("light");
 setTheme("system");
+
+// Task 03
+type OrderStatus = "pending" | "processing" | "shipped" | "delivered";

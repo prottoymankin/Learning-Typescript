@@ -5,3 +5,7 @@ Create a UserId type that accepts either a number or a string. Write printUserId
 ### Task 02 
 
 Create a literal union called Theme with "light", "dark", and "system". Create a function that accepts only those values.
+
+### Task 03
+
+Create an OrderStatus literal union containing "pending", "processing", "shipped", and "delivered".
