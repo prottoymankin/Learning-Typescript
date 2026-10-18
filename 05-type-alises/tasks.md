@@ -9,3 +9,7 @@ Create a literal union called Theme with "light", "dark", and "system". Create a
 ### Task 03
 
 Create an OrderStatus literal union containing "pending", "processing", "shipped", and "delivered".
+
+### Task 04
+
+Model CardPayment and UpiPayment as separate object types. Combine them into a Payment union using a literal method property. Write a function that handles each safely.
