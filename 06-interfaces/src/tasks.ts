@@ -109,3 +109,41 @@ type PhysicalProduct = Product & {
   weightInGrams: number;
   stockQuantity: number;
 };
+
+// Bonus Task
+
+// A type alias is a natural choice for defining a literal union.
+type idType = string | number;
+
+type ReservationStatusType = "pending" | "confirmed" | "cancelled";
+
+type PaymentStatusType = "pending" | "completed" | "failed" | "refunded";
+
+type PaymentMethodType = "card" | "bkash" | "bank";
+
+// Interface is suitable for defining the object shape of a property.
+interface Property {
+  id: idType
+  title: string;
+  price: number;
+  location: string;
+};
+
+// Interface is suitable for defining the object shape of a reservation.
+interface Reservation {
+  reservationId: string | number;
+  propertyId: idType;
+  startDate: Date;
+  endDate: Date;
+  status: ReservationStatusType;
+};
+
+// Interface is suitable for defining the object shape of a payment.
+interface Payment {
+  paymentId: idType;
+  reservationId: idType;
+  amount: number;
+  paymentMethod: PaymentMethodType;
+  status: PaymentStatusType;
+  paymentDate: Date
+};
