@@ -55,3 +55,28 @@ const employee: Employee = {
   age: 24,
   email: "john@gmail.com",
 };
+
+// Task 03
+
+type HasAddress = {
+  address: Address;
+};
+
+type HasContact = {
+  phone: string;
+};
+
+type ACustomer = HasAddress & HasContact & {
+  name: string;
+  email: string;
+};
+
+const customer: ACustomer = {
+  name: "John Doe",
+  email: "john@gmail.com",
+  address: {
+    city: "Dhaka",
+    country: "Bangladesh"
+  },
+  phone: "+8801711223344"
+};
