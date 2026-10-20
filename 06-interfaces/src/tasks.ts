@@ -32,3 +32,26 @@ interface Customer  {
   registrationData: Date;
   isActive: boolean;
 };
+
+// Task 02
+
+interface Person {
+  name: string;
+  age: number;
+  email: string;
+};
+
+interface Employee extends Person {
+  employeeId: string | number;
+  position: string;
+  salary: number;
+};
+
+const employee: Employee = {
+  employeeId: "EMP-101",
+  position: "Full-Stack Developer",
+  salary: 50000,
+  name: "John Doe",
+  age: 24,
+  email: "john@gmail.com",
+};
