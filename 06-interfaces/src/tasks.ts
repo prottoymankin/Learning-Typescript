@@ -80,3 +80,10 @@ const customer: ACustomer = {
   },
   phone: "+8801711223344"
 };
+
+// Task 04
+
+type PaymentMethod = "card" | "bkash" | "bank";
+
+//* A type alias is a natural choice here because it can define a literal union.
+//* An interface is mainly used to define object shapes and cannot directly define a literal union.
