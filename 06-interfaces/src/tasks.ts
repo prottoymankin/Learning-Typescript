@@ -87,3 +87,25 @@ type PaymentMethod = "card" | "bkash" | "bank";
 
 //* A type alias is a natural choice here because it can define a literal union.
 //* An interface is mainly used to define object shapes and cannot directly define a literal union.
+
+// Task 05
+
+type productIdType = string | number;
+type productStatusType = "available" | "out-of-stock" | "discontinued" | "coming-soon";
+
+interface Product {
+  id: productIdType;
+  name: string;
+  price: number;
+  status: productStatusType;
+};
+
+interface DigitalProduct extends Product {
+  downloadUrl: string;
+  fileSize: number;
+};
+
+type PhysicalProduct = Product & {
+  weightInGrams: number;
+  stockQuantity: number;
+};

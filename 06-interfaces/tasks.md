@@ -13,3 +13,7 @@ Create HasAddress and HasContact type aliases. Build a Customer type using an in
 ### Task 04
 
 Create a PaymentMethod type using a literal union. Explain in a comment why a type alias is a natural choice here instead of an interface.
+
+### Task 05
+
+Build a small product model using both interfaces and type aliases. Use an interface for Product, aliases for ProductId and ProductStatus, and interface extension or an intersection for specialized product types.
