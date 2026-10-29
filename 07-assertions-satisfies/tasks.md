@@ -3,3 +3,6 @@ Select a DOM input using a type assertion, then implement a safer version using 
 
 ### Task 02
 Demonstrate why "42" as number does not convert a string. Then perform the correct runtime conversion.
+
+### Task 03
+Create an application configuration type and an object using satisfies. Add an incorrect property and observe the error.

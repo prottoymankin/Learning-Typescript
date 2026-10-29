@@ -19,3 +19,29 @@ const num = '42';
 
 // correct runtime conversion
 const newNum = Number(num);
+
+// Task 03
+type AppConfig = {
+  appName: string;
+  version: string;
+  port: number;
+  debug: boolean;
+};
+
+// The first object satisfies all the requirements of AppConfig, so there is no error.
+const config = {
+  appName: 'Movie Explorer',
+  version: '1.0.0',
+  port: 3000,
+  debug: true
+} satisfies AppConfig;
+
+// The second object includes a theme property, which is not defined in AppConfig. Therefore, TypeScript reports an error.
+
+// const configWithError = {
+//   appName: 'Movie Explorer',
+//   version: '1.0.0',
+//   port: 3000,
+//   debug: true,
+//   theme: 'light'
+// } satisfies AppConfig;
