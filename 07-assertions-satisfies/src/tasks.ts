@@ -45,3 +45,33 @@ const config = {
 //   debug: true,
 //   theme: 'light'
 // } satisfies AppConfig;
+
+// Task 04
+type User = {
+  id: number;
+  username: string;
+};
+
+// `value is User` is a Type Predicate.
+// It tells TypeScript that if `isUser()` returns true,
+// the value can be treated as the User type.
+
+const isUser = (value: unknown): value is User => {
+  return (
+    typeof data === 'object' &&
+    data !== null &&
+    "id" in data &&
+    typeof data.id === 'number' &&
+    "name" in data &&
+    typeof data.name === 'string'
+  );
+};
+
+const data: unknown = JSON.parse(
+  '{ "id": 101, "username": "John Doe" }'
+);
+
+if (isUser(data)) {
+  console.log(data.id);
+  console.log(data.username);
+}

@@ -6,3 +6,6 @@ Demonstrate why "42" as number does not convert a string. Then perform the corre
 
 ### Task 03
 Create an application configuration type and an object using satisfies. Add an incorrect property and observe the error.
+
+### Task 04
+Treat parsed JSON as unknown and safely narrow it to a User type.
