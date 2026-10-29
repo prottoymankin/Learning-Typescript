@@ -1,2 +1,5 @@
 ### Task 01
 Select a DOM input using a type assertion, then implement a safer version using instanceof.
+
+### Task 02
+Demonstrate why "42" as number does not convert a string. Then perform the correct runtime conversion.
