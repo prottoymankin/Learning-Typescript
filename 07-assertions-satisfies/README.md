@@ -1,4 +1,4 @@
-#### Select a DOM input using a type assertion, then implement a safer version using instanceof.
+### Select a DOM input using a type assertion, then implement a safer version using instanceof.
 
 ```ts
 const inputElem = document.getElementById('email-input') as HTMLInputElement;
@@ -13,7 +13,7 @@ if (elem instanceof HTMLInputElement) {
 }
 ```
 
-#### Demonstrate why "42" as number does not convert a string. Then perform the correct runtime conversion.
+### Demonstrate why "42" as number does not convert a string. Then perform the correct runtime conversion.
 
 ```ts
 const num = '42';
@@ -30,7 +30,7 @@ const newNum = num as number
 const newNum = Number(num);
 ```
 
-#### Create an application configuration type and an object using satisfies. Add an incorrect property and observe the error.
+### Create an application configuration type and an object using satisfies. Add an incorrect property and observe the error.
 
 ```ts
 type AppConfig = {
@@ -64,7 +64,7 @@ const configWithError = {
 } satisfies AppConfig;
 ```
 
-#### Treat parsed JSON as unknown and safely narrow it to a User type.
+### Treat parsed JSON as unknown and safely narrow it to a User type.
 
 ```ts
 type User = {
