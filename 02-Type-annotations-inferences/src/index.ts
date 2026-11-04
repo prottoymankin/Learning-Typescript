@@ -11,7 +11,7 @@
 // };
 
 //Type annotation
-const name: string = "John";
+const username: string = "John";
 const age: number = 30;
 const isAdmin: boolean = false;
 const scores: number[] = [10, 20, 30];
