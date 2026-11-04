@@ -18,7 +18,7 @@ if (elem instanceof HTMLInputElement) {
 ```ts
 const num = '42';
 ```
-- string and number are different types, so TypeScript does not allow a direct type assertion from string to number because they have insufficient type overlap.
+`string and number are different types, so TypeScript does not allow a direct type assertion from string to number because they have insufficient type overlap.`
 
 ```ts
 // Cause error
