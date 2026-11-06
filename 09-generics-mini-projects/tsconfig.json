@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "esnext",
+    "target": "esnext",
+    "strict": true,
+    "jsx": "react-jsx",
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  }
+}
